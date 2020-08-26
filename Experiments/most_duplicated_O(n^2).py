@@ -1,3 +1,7 @@
+
+
+# ### Find the most repeated number in an array ## #
+# The time complexity is O(n^2)
 def most_frequent_num(arr):
     if len(arr) == 0:
         return 0
@@ -18,7 +22,7 @@ print(most_frequent_num(lis))
 liss = [0]
 print(most_frequent_num(liss))
 
-############# Test ###############
+# ############ Test ############## #
 test_data = [
     ([1, 2, 2, 2, 3, 5, 2, 1], 2, 4),
     ([8, 3, 2, 8, 3, 3, 2, 8, 3, 3], 3, 5),
@@ -34,3 +38,5 @@ for item in test_data:
     actual = most_frequent_num(item[0])
     accurent = item[2]
     print(f"Has test passed? {expected == actual}")
+
+
