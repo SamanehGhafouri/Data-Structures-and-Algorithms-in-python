@@ -7,6 +7,18 @@ numb = 102
 reverse_num_str(numb)
 
 
+# ################ Another Way ####################
+def reverse_num(num):
+    int_num = 0
+    for i in reversed(str(num)):
+        int_num = int_num * 10 + int(i)
+    return int_num
+
+
+numb = 102
+print(reverse_num(numb))
+
+
 # ################# TEST ################# #
 
 test_data = [
