@@ -43,5 +43,4 @@ test_data = [
 for item in test_data:
     expected = item[0]
     actual = reverse_number(item[1])
-
     print(expected == actual, expected, actual)
