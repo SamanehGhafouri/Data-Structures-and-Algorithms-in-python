@@ -3,7 +3,7 @@
 # and all odd numbers to the right side of the array.
 
 
-def even_on_the_right(arr):
+def even_on_the_left(arr):
     arr_1 = []
     arr_2 = []
     for i in range(len(arr)):
@@ -15,7 +15,7 @@ def even_on_the_right(arr):
 
 
 arr_one = [5, 3, 4, 1, 2]
-even_right = even_on_the_right(arr_one)
+even_right = even_on_the_left(arr_one)
 print(even_right)
 
 
@@ -34,7 +34,7 @@ test_data = [
 
 for item in test_data:
     expected = item[0]
-    actual = even_on_the_right(item[1])
+    actual = even_on_the_left(item[1])
     print(actual == expected, actual, expected)
 
 # ######### Running time = O(n)
