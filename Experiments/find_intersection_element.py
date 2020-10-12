@@ -37,30 +37,3 @@ for item in test_data:
     expected = item[2]
     actual = find_intersection_num(item[0], item[1])
     print(expected == actual, expected, actual)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# def find_intersection_num(list_a, list_b):
-#     count_a = set()
-#     intersect_element = set()
-#
-#     for i in list_a:
-#         count_a.add(i)
-#
-#     for j in list_b:
-#         if j in count_a:
-#             intersect_element.add(j)
-#
-#     return intersect_element
